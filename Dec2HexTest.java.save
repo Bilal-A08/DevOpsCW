@@ -1,0 +1,27 @@
+import java.io.*;
+import org.junit.Before;
+import org.junit.Test;
+import static org.junit.Assert.assertEquals;
+
+public class Dec2HexTest{
+	private final ByteArrayOutputStream resultOutContent = new ByteArrayOutputStream();
+	private final PrintStream originalSystemOut = System.out;
+
+	public Dec2HexTest(){
+	}
+
+	@Before
+	public void setUp(){
+	   //Redirect output to outContent
+	   System.setOut(new PrintStream(resultOutContent));
+	}
+
+	@Test
+	public void testValidDecimalToHex(){
+	   String[] args = {"11"};
+	   Dec2Hex.main(args);
+
+	   String expectedOutput = "Converting the Decimal Value 11 to Hex...\nHexadecimal representation is: A\n";
+	   assertEquals(expectedOutput, resultOutContent.toString());
+	}
+}
