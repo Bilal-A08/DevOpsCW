@@ -24,7 +24,6 @@ class Dec2Hex
         num = arg1;
         StringBuilder hexadecimal = new StringBuilder(); //bilal's comment - use StringBuilder instead of String, highlighted by sonarqube
         System.out.println("Converting the Decimal Value " + num + " to Hex...");
-0~
 
         while(num != 0)
         {
