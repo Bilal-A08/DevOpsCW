@@ -1,8 +1,9 @@
 class Dec2Hex
 {
-    public static int arg1;
-
     public static void main(String[] args)    {
+	//bilal's comment - made arg1 non static since it's only being used here
+	int arg1;
+
 	//bilal's comment - check for missing input
 	if(args.length == 0){
 	   System.out.println("Error: No input provided. Please provide a valid number");
