@@ -13,7 +13,7 @@ public class TestRunner {
              fails++;
          }
           if(fails >0)
-            throw  new Exception();
+            throw  new IllegalArgumentException("The tests failed");
           System.out.println(result.wasSuccessful());
       }
       catch(Exception e)
