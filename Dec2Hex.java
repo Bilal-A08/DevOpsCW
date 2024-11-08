@@ -1,7 +1,7 @@
 class Dec2Hex
 {
     public static void main(String[] args)    {
-	//bilal's comment - made arg1 non static since it's only being used here
+	//bilal's comment - made arg1 non static since it's only being used here 
 	int arg1;
 
 	//bilal's comment - check for missing input
